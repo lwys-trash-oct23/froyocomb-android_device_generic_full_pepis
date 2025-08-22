@@ -26,5 +26,4 @@ public class DeviceTestActivity extends Activity {
 
         setContentView(R.layout.main);
     }
-}s
-
+}

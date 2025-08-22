@@ -1,15 +1,20 @@
-# Add live wallpaper-related apps
-PRODUCT_PACKAGES := \
-    Camera \
-    LivePicker \
-    Basic \
-    HoloSpiral \
-    MagicSmoke \
-    MusicVisualization \
+# Add in live wallpaper-related apps
+PRODUCT_PACKAGES += \
+    LiveWallpapers \
+    HoloSpiralWallpaper \
+    MagicSmokeWallpapers \
+    VisualizationWallpapers \
+    LiveWallpapersPicker
+
+# Add in two samples
+PRODUCT_PACKAGES += \
+    RsBalls \
+    LunarLander
+
+PRODUCT_PACKAGES += \
     PepisDeviceTestActivity
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/board/generic/device.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
 
 PRODUCT_NAME := full_pepis
 PRODUCT_DEVICE := full_pepis
