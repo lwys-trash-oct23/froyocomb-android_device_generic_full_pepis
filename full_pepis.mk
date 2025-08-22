@@ -15,6 +15,7 @@ PRODUCT_PACKAGES += \
     PepisDeviceTestActivity
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_NAME := full_pepis
 PRODUCT_DEVICE := full_pepis
